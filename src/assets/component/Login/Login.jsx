@@ -2,6 +2,7 @@ import React from 'react';
 import login from '../../img/login.png';
 import google from '../../img/google.png';
 import { FaEyeSlash } from "react-icons/fa6";
+import { Link } from 'react-router-dom';
 
 
 const Login = () => {
@@ -20,7 +21,7 @@ const Login = () => {
             <div className='relative w-[425px]'>
             <h3 className='font-normal text-[13.34px] text-[#808080] mt-[32.7px] '>Password</h3> 
             <input className='w-full border-b-[2px] outline-none py-[16px] font-semibold text-[20px] text-[#03014C] leading-[27px placeholder-[#11175D] bg-transparent' type="password" placeholder='Enter your password' />
-            <FaEyeSlash className='absolute bottom-[16.67px] right-0 text-[26px] text-[#808080] cursor-pointer'/>
+            <FaEyeSlash className='absolute bottom-[16.67px] right-0 text-[26px] cursor-pointer'/>
             </div>
             <div className='flex justify-between w-[425px] mt-[32.7px]'>
               <div className='flex gap-[10px] cursor-pointer'>
@@ -31,7 +32,7 @@ const Login = () => {
             <p className='w-[425px] py-[26px] px-[122px] bg-[#5F34F5] rounded-[8.7px] mt-[56px] font-semibold text-[20px] leading-[28px] text-white hover:shadow-shadow cursor-pointer'>
             Login to Continue
             </p>
-            <h4 className='w-[425px] text-center mt-[35px] font-normal text-[13.34px] text-[#03014C]'>Don’t have an account ? <span className='text-[#EA6C00] cursor-pointer font-bold text-[13.34px]'>Register now </span> </h4>
+            <h4 className='w-[425px] text-center mt-[35px] font-normal text-[13.34px] text-[#03014C]'>Don’t have an account ? <span className='text-[#EA6C00] cursor-pointer font-bold text-[13.34px]'><Link to="/">Register now </Link> </span> </h4>
         </div>
         <div className='w-1/2'>
         <img className='w-full h-screen object-cover' src={login} alt="" />
